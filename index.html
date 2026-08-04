@@ -5,10 +5,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ashton's Website</title>
         <style>
+            body {
+                background-image: url(textured-white-paper.jpg);
+                background-size: cover;
+                font-family: 'Comic Sans MS';
+            }
+
+            h1 {
+                color: aquamarine;
+                background-color: gray;
+                filter: drop-shadow(8px 8px black); 
+                padding: 10px;
+                border: solid black 2px;
+                width: 50ch;
+            }
+
             a {
                 color: aquamarine;
                 background-color: gray;
-                border: solid black;
+                border: solid black 2px;
+                padding: 5px;
+            }
+
+            p {
+                width: 80ch;
+            }
+
+            nav {
+                margin: 2em;
+                background-color: gray;
+                border: solid black 2px;
+                filter: drop-shadow(8px 8px black); 
+                width: 50ch;
+            }
+
+            nav ul {
+                list-style: none;
+            }
+
+            nav li {
+                display: inline;
             }
 
             a:hover {
@@ -19,83 +55,99 @@
 
             img {
                 border: solid gray 2px; 
+                height: 100px;
                 filter: drop-shadow(8px 8px)
-            }
-
-            img:hover {
-                border: solid gray 2px; 
-                filter: drop-shadow(8px 8px aquamarine);
             }
         </style>
     </head>
-    <body
-        style="
-            background-image: url(textured-white-paper.jpg);
-            background-size: cover;
-            font-family: &quot;Comic Sans MS&quot;;
-        ">
-    
-        <h1 style="color: aquamarine; background-color: gray; filter: drop-shadow(8px 8px black); border: solid black">
-            Wow look at this really cool website
-        </h1>
-        <h2>A bunch of nonsense filler text</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br />
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br />
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br />
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<br />
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<br />
-            deserunt mollit anim id est laborum.
-        </p>
-        <h2>Have a look at this other page</h2>
-        <a href="about.html">about.html</a>
-        <hr />
+    <body>
+        <div id="banner">
+            <img src="banner.png" style="width: 115em; height: 20em;">
+        </div>
+        <header>
+            <h1>Wow look at this really cool website</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>A bunch of nonsense filler text</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <h3>Have a look at this other page</h3>
+            <a id="about" href="about.html">about.html</a>
+        </section>
+
+        <hr/>
+
+        <section>
         <h2>Here's a gif</h2>
-        <img
-            src="fish-spin.gif"
-            alt="A spinning fish"
-            height="100px"
-        />
-        <p><em>Woah</em></p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br />
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br />
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br />
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<br />
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<br />
-            deserunt mollit anim id est laborum.
-        </p>
-        <hr />
-        <h2>Have a look at lists</h2>
-        <h3>Unordered list:</h3>
-        <ul>
-            <li>Here's an item</li>
-            <li>And a another</li>
-            <li>Yet another item</li>
-        </ul>
-        <h3>Ordered list</h3>
-        <ol>
-            <li>This is an item</li>
-            <li>So is this</li>
-            <li>Even more items...</li>
-        </ol>
-        <hr />
-        <h2>Tables</h2>
-        <table>
-            <tr>
-                <td>Header 1</td>
-                <td>Header 2</td>
-                <td>Header 3</td>
-                <td>Header 4</td>
-            </tr>
-            <tr>
-                <td>Cell 1</td>
-                <td>Cell 2</td>
-                <td>Cell 3</td>
-                <td>Cell 4</td>
-            </tr>
-        </table>
-        <p>It looks terrible but I can't be bothered messing around with and styling it.</p>
-        <hr />
+            <img
+                src="fish-spin.gif"
+                alt="A spinning fish"
+                height="100px"
+            />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </section>
+
+        <hr/>
+
+        <section>
+            <h2>Have a look at lists</h2>
+            <h3>Unordered list:</h3>
+            <ul>
+                <li>Here's an item</li>
+                <li>And a another</li>
+                <li>Yet another item</li>
+            </ul>
+            <h3>Ordered list</h3>
+            <ol>
+                <li>This is an item</li>
+                <li>So is this</li>
+                <li>Even more items...</li>
+            </ol>
+        </section>
+
+        <hr/>
+
+        <section>
+            <h2>Tables</h2>
+            <table>
+                <tr>
+                    <td>Header 1</td>
+                    <td>Header 2</td>
+                    <td>Header 3</td>
+                    <td>Header 4</td>
+                </tr>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                </tr>
+            </table>
+            <p>It looks terrible but I can't be bothered messing around with and styling it.</p>
+        </section>
+
+        <hr/>
     </body>
 </html>
